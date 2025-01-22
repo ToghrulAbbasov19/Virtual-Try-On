@@ -12,3 +12,11 @@ For training the main model with autoencoder and cross attention mechanism:
 ```bash 
 python main_cond.py --data_path {PATH/TO/DATA} --save_dir {PATH/TO/SAVE/DIRECTORY} --pair_path {PATH/TO/PAIR_DATA}
 ```
+
+## Inference
+For the inference with different identity and cloth images:
+```bash 
+python sample.py --data_path {PATH/TO/DATA} --save_dir {PATH/TO/SAVE/DIRECTORY} --pair_path {PATH/TO/PAIR_DATA} --model_path {PATH/TO/CKPT}
+```
+The image and cloth inputs can be changed directly inside sample.py, and it will save the output to ./images folder by default.  
+
